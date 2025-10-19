@@ -1,11 +1,11 @@
-# AI Tools Assignment — Full Project
+# 🧠 AI Tools Assignment — Full Project
 
 ## Overview
 
 This project demonstrates the **end-to-end AI workflow** using multiple tools and frameworks. It covers:
 
-1. **Theory** — Conceptual understanding of AI frameworks.
-2. **Practical Implementation** — Hands-on projects in Classical ML, Deep Learning, and NLP.
+1. **Theory** — Conceptual understanding of AI frameworks.  
+2. **Practical Implementation** — Hands-on projects in Classical ML, Deep Learning, and NLP.  
 3. **Ethics & Optimization** — Model fairness, debugging, and optional deployment.
 
 ---
@@ -36,7 +36,7 @@ AI_Tools_Assignment/
 │   └── ethics_reflection.pdf
 └── README.md
 
-```
+````
 
 ---
 
@@ -44,9 +44,9 @@ AI_Tools_Assignment/
 
 Contains the conceptual understanding of AI frameworks, including:
 
-- **TensorFlow vs PyTorch**
-- **Scikit-learn vs TensorFlow**
-- **spaCy NLP advantages**
+- **TensorFlow vs PyTorch**  
+- **Scikit-learn vs TensorFlow**  
+- **spaCy NLP advantages**  
 - Use cases of **Jupyter Notebook**
 
 > See: `Part1_Theory/AI_Tools_Assignment_Part1_Theory.pdf`
@@ -55,74 +55,73 @@ Contains the conceptual understanding of AI frameworks, including:
 
 ## 🧩 Part 2 — Practical Implementation
 
-### 1. Classical ML: Iris Dataset
+### 1. Classical ML: Iris Dataset 🌸
 
-- Notebook: `iris_classifier.ipynb`
-- Model: Decision Tree
+- Notebook: `iris_classifier.ipynb`  
+- Model: Decision Tree  
 - Visualizations:
-  - Pairplots
-  - Confusion matrix
-  - Decision tree diagram
+  - Pairplots  
+  - Confusion matrix  
+  - Decision tree diagram  
 
-### 2. Deep Learning: MNIST Dataset
+### 2. Deep Learning: MNIST Dataset ✋
 
-- Notebook: `mnist_cnn_tf.ipynb`
-- Model: CNN for handwritten digit classification
+- Notebook: `mnist_cnn_tf.ipynb`  
+- Model: CNN for handwritten digit classification  
 - Saved plots in `images/`:
-  - Sample digits
-  - Training curves
-  - Confusion matrix
-  - Sample predictions
+  - Sample digits  
+  - Training curves  
+  - Confusion matrix  
+  - Sample predictions  
 - Optional Streamlit app:
   - `mnist_app.py` (local)
-  - Screenshot in `images/mnist_streamlit_demo.png`
+  - **Screenshot:**  
 
-### 3. NLP: Amazon Reviews
+![MNIST Streamlit App](Part2_Practical/images/mnist_streamlit_demo.png)
 
-- Notebook: `spacy_ner_sentiment.ipynb`
+### 3. NLP: Amazon Reviews 📝
+
+- Notebook: `spacy_ner_sentiment.ipynb`  
 - Tasks:
-  - Named Entity Recognition (NER) using spaCy
-  - Sentiment Analysis using TextBlob/VADER
-  - Visualization of entity extraction and sentiment distribution
+  - Named Entity Recognition (NER) using spaCy  
+  - Sentiment Analysis using TextBlob/VADER  
+  - Visualization of entity extraction and sentiment distribution  
 
 ---
 
-## 🧩 Part 3 — Ethics & Optimization
+## 🧩 Part 3 — Ethics & Optimization ⚖️
 
-- Ethical considerations and bias analysis for MNIST & Amazon Reviews models.
-- Debugging challenges and fixes for TensorFlow code.
-- Reflection documented in:  
-  `Part3_Ethics/ethics_reflection.pdf`
-- Bonus Task: Streamlit app screenshot included for demonstration.
+- Ethical considerations and bias analysis for MNIST & Amazon Reviews models  
+- Debugging challenges and fixes for TensorFlow code  
+- Reflection documented in: `Part3_Ethics/ethics_reflection.pdf`  
+- Bonus Task: Streamlit app screenshot included for demonstration  
 
 ---
 
 ## 🛠️ Dependencies
 
-- Python 3.x
+- Python 3.x  
 - Packages:
-  ```text
-  tensorflow
-  torch
-  torchvision
-  scikit-learn
-  spacy
-  pandas
-  numpy
-  matplotlib
-  seaborn
-  textblob
-  streamlit
-  pillow
-  ```
-
+```text
+tensorflow
+torch
+torchvision
+scikit-learn
+spacy
+pandas
+numpy
+matplotlib
+seaborn
+textblob
+streamlit
+pillow
 ````
 
 * SpaCy English model:
 
-  ```bash
-  python -m spacy download en_core_web_sm
-  ```
+```bash
+python -m spacy download en_core_web_sm
+```
 
 ---
 
@@ -159,9 +158,9 @@ streamlit run Part2_Practical/mnist_app.py
 
 ## 📝 Notes
 
-* All images and visualizations are saved in `Part2_Practical/images/`.
-* The Streamlit app is optional; a screenshot is included for Part 3 bonus.
-* All notebooks are self-contained and documented for clarity.
+* All images and visualizations are saved in `Part2_Practical/images/`
+* The Streamlit app is optional; a screenshot is included for Part 3 bonus
+* All notebooks are self-contained and documented for clarity
 
 ---
 
@@ -174,4 +173,3 @@ streamlit run Part2_Practical/mnist_app.py
 * MNIST Dataset: [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)
 
 ---
-````
