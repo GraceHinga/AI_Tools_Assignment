@@ -1,19 +1,23 @@
 # 🧠 AI Tools Assignment — Full Project
 
-## Overview
+**Author:** Njambi Hinga
+**Description:** This project demonstrates an **end-to-end AI workflow** using multiple tools and frameworks. It covers **Theory, Practical Implementation, and Ethics & Optimization**, including optional deployment.
 
-This project demonstrates the **end-to-end AI workflow** using multiple tools and frameworks. It covers:
+---
 
-1. **Theory** — Conceptual understanding of AI frameworks.  
-2. **Practical Implementation** — Hands-on projects in Classical ML, Deep Learning, and NLP.  
+## 📖 Overview
+
+This repository includes:
+
+1. **Theory** — Conceptual understanding of AI frameworks.
+2. **Practical Implementation** — Hands-on projects in Classical ML, Deep Learning (CNN), and NLP.
 3. **Ethics & Optimization** — Model fairness, debugging, and optional deployment.
 
 ---
 
-## 📂 Project Structure
+## 🗂️ Project Structure
 
-```
-
+```text
 AI_Tools_Assignment/
 ├── Part1_Theory/
 │   └── AI_Tools_Assignment_Part1_Theory.pdf
@@ -21,87 +25,104 @@ AI_Tools_Assignment/
 │   ├── iris_classifier.ipynb
 │   ├── mnist_cnn_tf.ipynb
 │   ├── spacy_ner_sentiment.ipynb
-│   ├── mnist_app.py               ← Optional Streamlit app (local)
-│   └── images/
+│   ├── mnist_app.py          ← Optional Streamlit app (local)
+│   ├── mnist_cnn_model.h5
+│   └── Images/
 │       ├── iris_pairplot.png
 │       ├── iris_confusion_matrix.png
 │       ├── iris_decision_tree.png
+│       ├── iris_feature_importance.png
 │       ├── mnist_samples.png
 │       ├── mnist_training_curves.png
 │       ├── mnist_confusion_matrix.png
 │       ├── mnist_predictions.png
-│       └── mnist_streamlit_demo.png  ← Screenshot of app
+│       ├── mnist_app_screenshot.png   ← Screenshot of Streamlit app
+│       ├── spacy_ner_example.html
+│       └── spacy_sentiment_distribution.png
 ├── Part3_Ethics/
 │   ├── AI_Tools_Assignment_Part3_Ethics.ipynb
 │   └── ethics_reflection.pdf
 └── README.md
-
-````
+```
 
 ---
 
 ## 🧩 Part 1 — Theory
 
-Contains the conceptual understanding of AI frameworks, including:
+Includes conceptual understanding of AI frameworks:
 
-- **TensorFlow vs PyTorch**  
-- **Scikit-learn vs TensorFlow**  
-- **spaCy NLP advantages**  
-- Use cases of **Jupyter Notebook**
+* **TensorFlow vs PyTorch** 🔄
+* **Scikit-learn vs TensorFlow** ⚡
+* **spaCy NLP advantages** 🗣️
+* Use cases of **Jupyter Notebook** 📓
 
-> See: `Part1_Theory/AI_Tools_Assignment_Part1_Theory.pdf`
+> Reference: `Part1_Theory/AI_Tools_Assignment_Part1_Theory.pdf`
 
 ---
 
 ## 🧩 Part 2 — Practical Implementation
 
-### 1. Classical ML: Iris Dataset 🌸
+### 1️⃣ Classical ML: Iris Dataset 🌸
 
-- Notebook: `iris_classifier.ipynb`  
-- Model: Decision Tree  
-- Visualizations:
-  - Pairplots  
-  - Confusion matrix  
-  - Decision tree diagram  
+* Notebook: `iris_classifier.ipynb`
+* Model: Decision Tree
+* Visualizations:
 
-### 2. Deep Learning: MNIST Dataset ✋
+  * Pairplots
+  * Confusion matrix
+  * Decision tree diagram
+  * Feature importance
 
-- Notebook: `mnist_cnn_tf.ipynb`  
-- Model: CNN for handwritten digit classification  
-- Saved plots in `images/`:
-  - Sample digits  
-  - Training curves  
-  - Confusion matrix  
-  - Sample predictions  
-- Optional Streamlit app:
-  - `mnist_app.py` (local)
-  - **Screenshot:**  
+---
 
-![MNIST Streamlit App](Part2_Practical/images/mnist_streamlit_demo.png)
+### 2️⃣ Deep Learning: MNIST Dataset ✋
 
-### 3. NLP: Amazon Reviews 📝
+* Notebook: `mnist_cnn_tf.ipynb`
 
-- Notebook: `spacy_ner_sentiment.ipynb`  
-- Tasks:
-  - Named Entity Recognition (NER) using spaCy  
-  - Sentiment Analysis using TextBlob/VADER  
-  - Visualization of entity extraction and sentiment distribution  
+* Model: CNN for handwritten digit classification
+
+* Saved plots in `Images/`:
+
+  * Sample digits (`mnist_samples.png`)
+  * Training curves (`mnist_training_curves.png`)
+  * Confusion matrix (`mnist_confusion_matrix.png`)
+  * Sample predictions (`mnist_predictions.png`)
+
+* Optional Streamlit app:
+
+  * `mnist_app.py` (runs locally)
+  * Screenshot of app:
+
+![MNIST Streamlit App](Part2_Practical/Images/mnist_app_screenshot.png)
+
+---
+
+### 3️⃣ NLP: Amazon Reviews ✍️
+
+* Notebook: `spacy_ner_sentiment.ipynb`
+* Tasks:
+
+  * Named Entity Recognition (NER) using **spaCy**
+  * Sentiment Analysis using **TextBlob/VADER**
+  * Visualization of entities & sentiment distribution (`spacy_ner_example.html`, `spacy_sentiment_distribution.png`)
 
 ---
 
 ## 🧩 Part 3 — Ethics & Optimization ⚖️
 
-- Ethical considerations and bias analysis for MNIST & Amazon Reviews models  
-- Debugging challenges and fixes for TensorFlow code  
-- Reflection documented in: `Part3_Ethics/ethics_reflection.pdf`  
-- Bonus Task: Streamlit app screenshot included for demonstration  
+* Ethical considerations and bias analysis for MNIST & Amazon Reviews models.
+* Debugging challenges for TensorFlow code.
+* Reflections documented in:
+  `Part3_Ethics/ethics_reflection.pdf`
+* Bonus: Streamlit app screenshot included.
 
 ---
 
 ## 🛠️ Dependencies
 
-- Python 3.x  
-- Packages:
+* Python 3.x
+* Packages:
+
 ```text
 tensorflow
 torch
@@ -115,9 +136,9 @@ seaborn
 textblob
 streamlit
 pillow
-````
+```
 
-* SpaCy English model:
+*SpaCy English model:*
 
 ```bash
 python -m spacy download en_core_web_sm
@@ -125,7 +146,7 @@ python -m spacy download en_core_web_sm
 
 ---
 
-## 📌 How to Run (Local)
+## 📌 How to Run Locally
 
 1. Activate your virtual environment:
 
@@ -142,7 +163,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Open notebooks for hands-on exploration:
+3. Open notebooks for exploration:
 
 ```bash
 jupyter notebook
@@ -158,18 +179,16 @@ streamlit run Part2_Practical/mnist_app.py
 
 ## 📝 Notes
 
-* All images and visualizations are saved in `Part2_Practical/images/`
-* The Streamlit app is optional; a screenshot is included for Part 3 bonus
-* All notebooks are self-contained and documented for clarity
+* All images are saved in `Part2_Practical/Images/`
+* Streamlit app is optional; screenshot included for demonstration
+* Notebooks are self-contained with explanations and visualizations
 
 ---
 
 ## 📚 References
 
-* TensorFlow Documentation: [https://www.tensorflow.org/](https://www.tensorflow.org/)
-* PyTorch Documentation: [https://pytorch.org/](https://pytorch.org/)
-* Scikit-learn Documentation: [https://scikit-learn.org/](https://scikit-learn.org/)
-* spaCy Documentation: [https://spacy.io/](https://spacy.io/)
-* MNIST Dataset: [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/)
-
----
+* [TensorFlow Documentation](https://www.tensorflow.org/)
+* [PyTorch Documentation](https://pytorch.org/)
+* [Scikit-learn Documentation](https://scikit-learn.org/)
+* [spaCy Documentation](https://spacy.io/)
+* [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
