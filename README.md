@@ -1,6 +1,9 @@
 # 🧠 AI Tools Assignment — Full Project
 
+---
 **Author:** Njambi Hinga
+
+---
 **Description:** This project demonstrates an **end-to-end AI workflow** using multiple tools and frameworks. It covers **Theory, Practical Implementation, and Ethics & Optimization**, including optional deployment.
 
 ---
